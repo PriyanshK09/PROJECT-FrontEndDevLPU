@@ -4,7 +4,7 @@
 
 :root {
  --primary-color: #333;
- --light-color: #f8f8ff;
+ --light-color: #dedee9;
  --success-color: #5cb85c;
  --error-color: #d9534f;
  --font-family: 'Lato', sans-serif;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
- background-color: #eaeef7;
+ background-color: #a3a7af;
  color: var(--primary-color);
  font-family: var(--font-family);
  line-height: 1.6;
