@@ -1,54 +1,36 @@
-# FrontEndDevLPU
+# To-Do List Application
 
-Welcome to the FrontEndDevLPU repository, where you can find various frontend development projects. This repository contains the following projects:
+This project is a To-Do List Application built using HTML, CSS, and JavaScript. It provides features for users to manage their tasks and categories effectively.
 
-## Project 1: ToDo List App
-A simple ToDo list app built with HTML, CSS, and JavaScript. This app allows users to add, toggle completion, and delete todos. Todos are saved in local storage for persistence.
+## Live Demo
 
-### Features
-- Add new todos using the input field.
-- Click on a todo to toggle its completion status.
-- Right-click on a todo to delete it.
-- Todos are saved in local storage.
+Check out the live demo [here](https://todolist-int219.netlify.app/).
 
-### How to Use
-1. Clone the repository or download the files.
-2. Navigate to the `ToDo-List` folder.
-3. Open `index.html` in your web browser.
-4. Enter a todo in the input field and press Enter or click the "Add Todo" button.
-5. Click on a todo to mark it as completed.
-6. Right-click on a todo to delete it.
+## Installation
 
-### Preview
-![Todo List App Preview](/ToDo-List/ToDoList-Preview.png)
+There is no installation required for this project. Simply open the `index.html` file in your web browser to access the application.
 
-## Project 2: Theme Clock
-A simple clock app built with HTML, CSS, and JavaScript. This app displays the current time and updates the background color based on the time.
+## Usage
 
-### Features
+- **Login/Signup**: Users can either login with their existing account or sign up for a new account.
+- **Add Categories**: Users can add new categories for organizing their tasks.
+- **Add Todos**: Users can add new tasks (todos) under specific categories.
+- **Edit/Delete Todos**: Users can edit or delete existing tasks.
+- **View All Categories**: Users can view all categories and their associated tasks.
 
-- Dark and light mode toggle.
-- Animated clock hands for hours, minutes, and seconds.
-- Current time displayed in 12-hour format with minutes and AM/PM indicator.
-- Current date displayed with the day of the week, month, and date.
+## Directory Structure
 
-### Usage
+- `index.html`: Entry point of the application, leading to either `login.html` or `signup.html`, and then to `main.html`.
+- `login.html` and `signup.html`: Pages for user authentication.
+- `main.html`: Main page of the application displaying the to-do list.
+- `main.css`: Common CSS file for styling all pages.
+- `main.js`: Common JavaScript file for main functionality.
+- `auth.js`: JavaScript file for user authentication.
 
-1. Clone the repository or download the files.
-2. Navigate to the `ThemeClock` folder.
-3. Open `index.html` in your web browser.
-4. Click the "Dark mode" button to toggle between light and dark modes.
+## Development
 
-### Preview
+This project is developed and maintained by Priyansh Khare. If you would like to contribute, please open an issue or submit a pull request.
 
-![Theme Clock Preview](/ThemeClock/ThemeClock-Preview.png)
+## License
 
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-
-Feel free to contribute to this project by submitting a pull request or opening an issue.
-
-Stay tuned for more projects in other folders!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
