@@ -1,112 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Modern Todo List Application</title>
 </head>
-
 <body>
-    <div class="app">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <header class="header">
-                <h1 class="header-title">My Categories</h1>
-                <form class="sidebar-form" data-new-category-form>
-                    <div class="form-control">
-                        <input type="text" placeholder="Enter Category" data-new-category-input>
-                    </div>
-                    <button class="btn btn-primary">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Add Category
-                    </button>
-                </form>
-            </header>
-            <ul class="sidebar-list" data-categories>
-                <li class="sidebar-item">All Categories</li>
-                <li class="sidebar-item">
-                    Work
-                    <input type="color" class="sidebar-color">
-                </li>
-                <li class="sidebar-item">
-                    School
-                    <input type="color" class="sidebar-color">
-                </li>
-            </ul>
-        </aside>
-
-        <!-- Main -->
-        <main class="main">
-            <!-- Header -->
-            <header class="header">
-                <div>
-                    <h1 class="header-title">Welcome Back, <strong id="username"></strong></h1>
-                    <div class="currently-viewing" data-currently-viewing>You are currently viewing All Categories</div>
-                </div>
-
-                <!-- Create Todo Form -->
-                <form class="create-todo-form" data-new-todo-form>
-                    <div class="form-control">
-                        <select data-new-todo-select required>
-                            <option value="">All Categories</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" data-new-todo-input placeholder="Enter Todo" required>
-                    </div>
-                    <button class="btn btn-primary">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Add Todo
-                    </button>
-                </form>
-
-                <!-- Update Todo Form -->
-                <form class="edit-todo-form" data-edit-todo-form>
-                    <div class="form-control">
-                        <select data-edit-todo-select>
-                            <option value="">All Categories</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" data-edit-todo-input placeholder="Enter Todo" required>
-                    </div>
-                    <button class="btn btn-primary">Save</button>
-                </form>
-            </header>
-
-            <!-- Cards -->
-            <section class="todos-container" data-cards>
-                <div class="todo" style="border-color: black;">
-                    <div class="todo-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">
-                        Work
-                    </div>
-                    <p class="todo-description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, doloribus.
-                    </p>
-                    <div class="todo-actions">
-                        <i class="far fa-edit"></i>
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-                </div>
-            </section>
-        </main>
+    <div class="landing-page">
+        <h1>Welcome to the Modern Todo List App</h1>
+        <p>Stay organized and productive with our user-friendly to-do list app</p>
+        <a href="login.html" class="btn">Get Started</a>
     </div>
-    <script src="./auth.js"></script>
-    <script>
-        const commentElement = document.getElementById('username');
 
-        // Update the comment with the current user's username
-        if (currentUser) {
-            commentElement.textContent = currentUser;
-        } else {
-            commentElement.textContent = 'Priyansh Khare';
-        }
-    </script>
     <script src="./main.js"></script>
 </body>
-
 </html>
