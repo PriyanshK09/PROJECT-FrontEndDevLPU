@@ -122,8 +122,8 @@ function validateLogin() {
         // Store the username in the global variable
         currentUser = username;
 
-        // Redirect to index.html after successful login
-        window.location.href = 'index.html';
+        // Redirect to main.html after successful login
+        window.location.href = 'main.html';
     } else {
         showError('Invalid username or password.', 'error');
     }
